@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <main id="container">
+      <h1 id="title">Architecture form</h1>
+      <p id="description">
+        Complete the following fields to know your preferences
+      </p>
+      <div id="form">
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your e-mail"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Age<span> (Optional)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="1"
+              max="99"
+              class="form-control"
+              placeholder="Enter your age"
+            />
+          </div>
+          <div class="form-group">
+            <p>Where do you from?</p>
+            <select name="lorem" id="dropdown" class="form-control" required>
+              <option disaled selected value>Select your contry</option>
+              <option value="colombia">Colombia</option>
+              <option value="panama">Panama</option>
+              <option value="eeuu">EEUU</option>
+              <option value="spain">Spain</option>
+              <option value="united-kingdom">United Kingdom</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>What is your occupation?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="elementary-student"
+                type="radio"
+                class="input-radio"
+                checked
+              />Elementary Student
+            </label>
+            <br />
+            <label>
+              <input
+                name="user-recommend"
+                value="arquitect-student"
+                type="radio"
+                class="input-radio"
+              />Arquitect Student
+            </label>
+            <br />
+            <label>
+              <input
+                name="user-recommend"
+                value="profesional"
+                type="radio"
+                class="input-radio"
+              />Profesional
+            </label>
+          </div>
+
+          <div class="form-goup">
+            <p>what is your interest area?</p>
+            <label>
+              <input
+                name="prefer"
+                value="landscape-architect"
+                type="checkbox"
+                class="input-checkbox"
+              />
+              Landscape architect.
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="urban-planner"
+                type="checkbox"
+                class="input-checkbox"
+              />
+              Urban Planner.
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="restoration-arquitect"
+                type="checkbox"
+                class="input-checkbox"
+              />
+              Restoration Architect.
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="research-architect"
+                type="checkbox"
+                class="input-checkbox"
+              />
+              Research Architect.
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="lighting-architect"
+                type="checkbox"
+                class="input-checkbox"
+              />
+              Lighting Architect.
+            </label>
+          </div>
+          <div class="form-group">
+            <p>Any Sugestions ?</p>
+            <textarea
+              name="coment"
+              id="comments"
+              class="input-textarea"
+              placeholder="Enter your coment here..."
+            ></textarea>
+          </div>
+          <div id="button">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
