@@ -1,0 +1,3 @@
+# fccResponsiveWebDesign
+
+## Practice Exercises
